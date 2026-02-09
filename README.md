@@ -1,85 +1,62 @@
 # Silent Hunger Discovery Engine (SHDE)
-### Predictive Analytics for Micronutrient Deficiency Risk
+### Predictive Analytics for Micronutrient Deficiency Risk in South Asia
 
-## Project Overview
-Micronutrient deficiencies (“Silent Hunger”) affect over 2 billion people globally and often remain undetected until long-term health, cognitive, and economic damage occurs. Unlike calorie-based malnutrition, these deficiencies persist even in populations with adequate food intake due to systemic economic, environmental, and dietary factors.
+## 📌 Project Overview
+"Silent Hunger" (micronutrient deficiency) affects over 2 billion people globally. Unlike visible malnutrition, it often remains undetected until irreversible health damage occurs. 
 
-The Silent Hunger Discovery Engine (SHDE) is a research-driven analytics project aimed at identifying and predicting population-level micronutrient deficiency risk by integrating public health indicators, economic stress signals, and digital behavioral data.
-
-The objective is to enable early risk identification to support evidence-based public health decision-making.
+The **Silent Hunger Discovery Engine (SHDE)** is a research-driven analytics project that integrates public health indicators, economic stress signals, and nutritional trends to predict population-level risk. This project focuses specifically on **Pakistan and India (2010–2025)** to understand how economic factors like food inflation drive nutritional outcomes.
 
 ---
 
-## Research Objectives
-- Analyze long-term trends (2000–2024) in key micronutrient deficiency indicators
-- Examine the relationship between food affordability and nutritional outcomes
-- Identify high-risk population groups across age and geography
-- Quantify the downstream health and socio-economic impact of hidden hunger
-- Develop an interpretable risk-scoring framework for early warning
+## 🔍 Key Research Questions
+1. **Temporal Trends:** How have anemia, stunting, and wasting prevalence evolved over the last 15 years?
+2. **Economic Correlation:** Does high Food CPI (Inflation) directly correlate with increased nutritional deficiency?
+3. **Risk Mapping:** Which demographics remain at the highest risk despite national-level progress?
+4. **Predictive Analytics:** Can we forecast nutritional risk for 2030 based on current socio-economic trajectories?
 
 ---
 
-## Key Research Questions
-- Have micronutrient deficiencies increased or decreased over time?
-- Is food price inflation associated with higher deficiency prevalence?
-- Which population groups are most vulnerable (children, adults, elderly)?
-- What structural factors (diet transition, soil depletion) correlate with observed trends?
-- What are the long-term health and economic consequences of untreated deficiencies?
+## 🛠 Methodology & Roadmap
+
+### **Notebook 01: Research & Problem Mapping**
+* **Objective:** Define the theoretical framework and domain-specific hypotheses.
+* **Key Tasks:** Literature review on micronutrient gaps and defining the "Silent Hunger" index.
+* **Outcome:** A structured list of indicators and established research assumptions.
+
+### **Notebook 02: Data Acquisition & Harmonization**
+* **Objective:** Ingest and standardize "messy" raw data from global sources.
+* **Sources:** WHO (Anemia), UNICEF (Stunting/Wasting), World Bank (Food CPI).
+* **Process:** Metadata bypassing, sheet targeting, and **Wide-to-Long** schema transformation (Melt logic).
+
+### **Notebook 03: Exploratory Data Analysis (EDA) & Statistics**
+* **Objective:** Uncover patterns, handle outliers, and perform statistical profiling.
+* **Key Tasks:** Correlation analysis between Inflation and Nutrition; handling missing temporal data.
+* **Outcome:** Feature selection and a "Clean Master Dataset."
+
+### **Notebook 04: Predictive Modeling & Risk Scoring**
+* **Objective:** Develop an explainable ML framework to forecast risk levels.
+* **Models:** Time-series forecasting and regression-based risk scoring.
+* **Final Output:** A comprehensive Research Report with data-driven policy recommendations.
 
 ---
 
-## Methodology (R-PACE Framework)
-
-### Phase 1: Research & Problem Mapping (Notebook 01)
-- Scientific literature review on micronutrient deficiencies
-- Vulnerability analysis across demographic groups
-- Hypothesis formulation and analytical assumptions
-
-### Phase 2: Data Acquisition & Harmonization (Notebook 02–03)
-- WHO: Anemia prevalence
-- UNICEF: Stunting and wasting indicators
-- World Bank: Food price inflation indices
-- Google Trends: Symptom-related search behavior
-- Data cleaning, standardization, and temporal alignment
-
-### Phase 3: Modeling & Risk Analysis (Notebook 04)
-- Feature engineering across health, economic, and digital domains
-- Explainable statistical and machine learning models
-- Deficiency risk scoring and comparative analysis
-
-### Phase 4: Visualization & Deployment (Planned)
-- Interactive dashboards for policy-level insights
-- API-based model access (FastAPI)
-- Web-based visualization layer (React.js)
+## 💻 Technology Stack
+* **Language:** Python 3.x
+* **Data Science:** Pandas, NumPy, Scipy
+* **Machine Learning:** Scikit-Learn
+* **Visualization:** Seaborn, Matplotlib, Plotly (Interactive Research Charts)
+* **Documentation:** Jupyter Notebooks & Markdown
 
 ---
 
-## Technology Stack
-- Python (Pandas, NumPy, Scikit-learn)
-- Jupyter Notebooks
-- Google Trends API (PyTrends)
-- Data Visualization Libraries
-- Git & GitHub
+## 🎯 Scope & Ethics
+* **Level:** Population-level analysis (National/Regional).
+* **Non-Clinical:** This engine is designed for research and policy support, not for individual medical diagnosis.
+* **Transparency:** All data cleaning steps and model assumptions are fully documented to ensure reproducibility.
 
 ---
 
-## Project Timeline
-- Phase 1: Research & Question Formalization
-- Phase 2: Data Engineering & Integration
-- Phase 3: Modeling & Interpretation
-- Phase 4: Visualization & System Packaging
+## 🤝 Collaboration & Contact
+This is an open-access research project. Feedback from Data Scientists, Economists, and Public Health experts is welcome.
 
----
-
-## Scope & Ethics
-- Population-level analysis only
-- No individual-level diagnosis
-- Transparent assumptions and limitations
-- Designed to support research and policy, not clinical decision-making
-
----
-
-## Collaboration
-This is an open research project. Contributions from data scientists, economists, and public health researchers are welcome.
-
-Contact: *https://www.linkedin.com/in/shanzaykhan-/*
+**Shanzay Khan** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/shanzaykhan-/)
