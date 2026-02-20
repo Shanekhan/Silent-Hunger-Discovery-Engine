@@ -1,62 +1,98 @@
-# Silent Hunger Discovery Engine (SHDE)
-### Predictive Analytics for Micronutrient Deficiency Risk in South Asia
+# 🥗 Silent Hunger Discovery Engine (SHDE)  
+### Predictive Analytics for Micronutrient Deficiency Risk in South Asia (2010–2030)
+
+---
 
 ## 📌 Project Overview
-"Silent Hunger" (micronutrient deficiency) affects over 2 billion people globally. Unlike visible malnutrition, it often remains undetected until irreversible health damage occurs. 
 
-The **Silent Hunger Discovery Engine (SHDE)** is a research-driven analytics project that integrates public health indicators, economic stress signals, and nutritional trends to predict population-level risk. This project focuses specifically on **Pakistan and India (2010–2025)** to understand how economic factors like food inflation drive nutritional outcomes.
+**"Silent Hunger"** (micronutrient deficiency) affects over **2 billion people globally**. Unlike visible malnutrition, it often remains undetected until irreversible health damage occurs.  
+
+The **Silent Hunger Discovery Engine (SHDE)** is a research-driven predictive analytics project that integrates:
+
+- Public health indicators  
+- Economic stress signals  
+- Nutritional trend data  
+
+This study focuses on **Pakistan and India (2010–2025)** to examine how economic variables—particularly **Food CPI (Food Inflation)**—influence national-level nutritional outcomes.
 
 ---
 
 ## 🔍 Key Research Questions
-1. **Temporal Trends:** How have anemia, stunting, and wasting prevalence evolved over the last 15 years?
-2. **Economic Correlation:** Does high Food CPI (Inflation) directly correlate with increased nutritional deficiency?
-3. **Risk Mapping:** Which demographics remain at the highest risk despite national-level progress?
-4. **Predictive Analytics:** Can we forecast nutritional risk for 2030 based on current socio-economic trajectories?
+
+- **Temporal Trends:**  
+  How have anemia, stunting, and wasting prevalence evolved over the last 15 years?
+
+- **Economic Correlation:**  
+  Does higher Food CPI (inflation) correlate with increased micronutrient deficiency risk?
+
+- **The Shadow Effect:**  
+  How does food inflation today affect nutritional health 12 months later?
+
+- **Predictive Analytics:**  
+  Can we forecast micronutrient deficiency risk for 2030 based on current trajectories?
 
 ---
 
-## 🛠 Methodology & Roadmap
+## 🛠 Methodology & PACE Roadmap
 
-### **Notebook 01: Research & Problem Mapping**
-* **Objective:** Define the theoretical framework and domain-specific hypotheses.
-* **Key Tasks:** Literature review on micronutrient gaps and defining the "Silent Hunger" index.
-* **Outcome:** A structured list of indicators and established research assumptions.
+| Phase      | Notebook | Objective | Key Outcome |
+|------------|----------|-----------|-------------|
+| **Plan** | `01_Research_Mapping` | Define theoretical framework & hypotheses | Structured indicator framework |
+| **Analyze** | `02_Data_Acquisition` | Ingest & harmonize multi-source global datasets | Wide-to-Long (Melted) dataset |
+| **Construct** | `03_EDA_Statistics` | Pattern discovery, outlier handling, feature engineering | Clean Master Dataset |
+| **Execute** | `04_Modeling_Forecast` | Machine Learning modeling & risk scoring | 74.4% Accurate Random Forest Model + 2030 Forecast |
 
-### **Notebook 02: Data Acquisition & Harmonization**
-* **Objective:** Ingest and standardize "messy" raw data from global sources.
-* **Sources:** WHO (Anemia), UNICEF (Stunting/Wasting), World Bank (Food CPI).
-* **Process:** Metadata bypassing, sheet targeting, and **Wide-to-Long** schema transformation (Melt logic).
+---
 
-### **Notebook 03: Exploratory Data Analysis (EDA) & Statistics**
-* **Objective:** Uncover patterns, handle outliers, and perform statistical profiling.
-* **Key Tasks:** Correlation analysis between Inflation and Nutrition; handling missing temporal data.
-* **Outcome:** Feature selection and a "Clean Master Dataset."
+## 📈 Key Findings
 
-### **Notebook 04: Predictive Modeling & Risk Scoring**
-* **Objective:** Develop an explainable ML framework to forecast risk levels.
-* **Models:** Time-series forecasting and regression-based risk scoring.
-* **Final Output:** A comprehensive Research Report with data-driven policy recommendations.
+- **12-Month Lag Effect:**  
+  Inflation impacts households immediately, but peak nutritional deterioration appears approximately one year later.
+
+- **Country Sensitivity:**  
+  Pakistan shows higher nutritional risk sensitivity to Food CPI volatility compared to India.
+
+- **Feature Importance:**  
+  - Food CPI  
+  - Country-specific economic baselines  
+  - Inflation-adjusted indicators  
+
+  These emerged as the strongest predictors of micronutrient deficiency risk.
 
 ---
 
 ## 💻 Technology Stack
-* **Language:** Python 3.x
-* **Data Science:** Pandas, NumPy, Scipy
-* **Machine Learning:** Scikit-Learn
-* **Visualization:** Seaborn, Matplotlib, Plotly (Interactive Research Charts)
-* **Documentation:** Jupyter Notebooks & Markdown
+
+- **Language:** Python 3.x  
+- **Core Libraries:** Pandas, NumPy, SciPy, Scikit-Learn  
+- **Visualization:** Seaborn, Matplotlib, Plotly  
+- **Framework:** PACE (Plan – Analyze – Construct – Execute)
 
 ---
 
 ## 🎯 Scope & Ethics
-* **Level:** Population-level analysis (National/Regional).
-* **Non-Clinical:** This engine is designed for research and policy support, not for individual medical diagnosis.
-* **Transparency:** All data cleaning steps and model assumptions are fully documented to ensure reproducibility.
+
+- **Level of Analysis:** Population-level (National/Regional)  
+- **Non-Clinical Use:** Designed for research and policy insights — not for individual diagnosis  
+- **Reproducibility:** Fully documented preprocessing steps and model assumptions  
 
 ---
 
-## 🤝 Collaboration & Contact
-This is an open-access research project. Feedback from Data Scientists, Economists, and Public Health experts is welcome.
+## 📂 Repository Structure
 
-**Shanzay Khan** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/shanzaykhan-/)
+├── Notebook_01_Research_Problem_Mapping.ipynb
+├── Notebook_02_Data_Acquisition_Structure.ipynb
+├── Notebook_03_EDA_Statistical_Discovery.ipynb
+├── Notebook_04_Modeling_Forecasting_Insights.ipynb
+├── SHDE_Forecast_2026_2030.pdf
+├── shde_master_engine_v1.xls
+└── README.md
+
+
+---
+
+## 🤝 Connect & Collaborate
+
+I am a Data Scientist focused on social-impact analytics and public health modeling.  
+
+**Shanzay Khan**
