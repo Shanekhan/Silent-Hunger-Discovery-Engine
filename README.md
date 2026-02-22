@@ -1,104 +1,87 @@
-# 🥗 Silent Hunger Discovery Engine (SHDE)  
-### Predictive Analytics for Micronutrient Deficiency Risk in South Asia (2010–2030)
+# 🥗 Silent Hunger Discovery Engine (SHDE)
+### **Predictive Analytics for Micronutrient Deficiency Risk in South Asia (2010–2030)**
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Machine Learning](https://img.shields.io/badge/Focus-Random%20Forest%20Forecasting-green)
+![Domain](https://img.shields.io/badge/Domain-Public%20Health%20%7C%20Economics-red)
+![Status](https://img.shields.io/badge/Status-Complete-success)
 
 ---
 
 ## 📌 Project Overview
+"Silent Hunger" (micronutrient deficiency) is a global crisis affecting over 2 billion people. Unlike clinical malnutrition, it is often invisible until irreversible damage occurs. 
 
-**"Silent Hunger"** (micronutrient deficiency) affects over **2 billion people globally**. Unlike visible malnutrition, it often remains undetected until irreversible health damage occurs.  
-
-The **Silent Hunger Discovery Engine (SHDE)** is a research-driven predictive analytics project that integrates:
-
-- Public health indicators  
-- Economic stress signals  
-- Nutritional trend data  
-
-This study focuses on **Pakistan and India (2010–2025)** to examine how economic variables—particularly **Food CPI (Food Inflation)**—influence national-level nutritional outcomes.
+The **SHDE Engine** is a research-driven analytical framework that quantifies the relationship between **Macroeconomic Volatility (Food CPI)** and **Biological Outcomes (Anemia, Stunting, Wasting)**. Focusing on the Pakistan-India corridor (2010–2025), this project identifies a critical **12-month "Shadow Effect"** between economic shocks and nutritional decline.
 
 ---
 
-## 🔍 Key Research Questions
-
-- **Temporal Trends:**  
-  How have anemia, stunting, and wasting prevalence evolved over the last 15 years?
-
-- **Economic Correlation:**  
-  Does higher Food CPI (inflation) correlate with increased micronutrient deficiency risk?
-
-- **The Shadow Effect:**  
-  How does food inflation today affect nutritional health 12 months later?
-
-- **Predictive Analytics:**  
-  Can we forecast micronutrient deficiency risk for 2030 based on current trajectories?
+## 🚀 Key Discovery: The "Shadow Effect"
+One of the primary findings of this research is the **12-month temporal lag**. 
+* **The Insight:** Food inflation today does not peak in health markers immediately. 
+* **The Window:** There is a one-year window between an economic spike and peak nutritional risk, providing a strategic "Policy Window" for anticipatory intervention.
 
 ---
 
-## 🛠 Methodology & PACE Roadmap
+## 🛠 Methodology (The PACE Framework)
+The project follows the Google-standard **PACE** (Plan, Analyze, Construct, Execute) workflow:
 
-| Phase      | Notebook | Objective | Key Outcome |
-|------------|----------|-----------|-------------|
-| **Plan** | `01_Research_Mapping` | Define theoretical framework & hypotheses | Structured indicator framework |
-| **Analyze** | `02_Data_Acquisition` | Ingest & harmonize multi-source global datasets | Wide-to-Long (Melted) dataset |
-| **Construct** | `03_EDA_Statistics` | Pattern discovery, outlier handling, feature engineering | Clean Master Dataset |
-| **Execute** | `04_Modeling_Forecast` | Machine Learning modeling & risk scoring | 74.4% Accurate Random Forest Model + 2030 Forecast |
-
----
-
-## 📈 Key Findings
-
-- **12-Month Lag Effect:**  
-  Inflation impacts households immediately, but peak nutritional deterioration appears approximately one year later.
-
-- **Country Sensitivity:**  
-  Pakistan shows higher nutritional risk sensitivity to Food CPI volatility compared to India.
-
-- **Feature Importance:**  
-  - Food CPI  
-  - Country-specific economic baselines  
-  - Inflation-adjusted indicators  
-
-  These emerged as the strongest predictors of micronutrient deficiency risk.
+| Phase | Notebook | Objective | Key Outcome |
+| :--- | :--- | :--- | :--- |
+| **Plan** | `01_Research_Mapping` | Theoretical framework & hypothesis | Indicator Logic |
+| **Analyze** | `02_Data_Acquisition` | Multi-source ingestion & harmonization | Cleaned Longitudinal Data |
+| **Construct** | `03_EDA_Statistics` | Feature Engineering & Lag Analysis | Statistical Validation |
+| **Execute** | `04_Modeling_Forecast` | Random Forest Modeling & Scenario Projections | **74.4% Accuracy Model** |
 
 ---
 
-## 💻 Technology Stack
+## 📊 Key Findings & Insights
+* **Economic Mediation:** Food CPI is a primary leading indicator of nutritional risk.
+* **Regional Sensitivity:** Pakistan shows a higher upward sensitivity to inflation shocks compared to structural baselines in India.
+* **Feature Importance:** Random Forest diagnostics identified **Lagged Food CPI** and **Country Baseline** as the most significant predictive signals.
 
-- **Language:** Python 3.x  
-- **Core Libraries:** Pandas, NumPy, SciPy, Scikit-Learn  
-- **Visualization:** Seaborn, Matplotlib, Plotly  
-- **Framework:** PACE (Plan – Analyze – Construct – Execute)
+
 
 ---
 
-## 🎯 Scope & Ethics
-
-- **Level of Analysis:** Population-level (National/Regional)  
-- **Non-Clinical Use:** Designed for research and policy insights — not for individual diagnosis  
-- **Reproducibility:** Fully documented preprocessing steps and model assumptions  
+## 💻 Tech Stack
+* **Languages:** Python (Pandas, NumPy, Scikit-Learn)
+* **Visualization:** Seaborn, Matplotlib, Plotly (Dynamic Trend Analysis)
+* **Modeling:** Random Forest Regressor, Time-Series Lag Analysis
+* **Framework:** PACE Framework for Data Science
 
 ---
 
 ## 📂 Repository Structure
 
-├── Notebook_01_Research_Problem_Mapping.ipynb
+├── Data/                 # Harmonized Longitudinal Datasets
 
-├── Notebook_02_Data_Acquisition_Structure.ipynb
+├── Notebooks/            # End-to-End PACE Pipeline (01-04)
 
-├── Notebook_03_EDA_Statistical_Discovery.ipynb
+├── Plots/                # High-Resolution Visualizations & Forecasts
 
-├── Notebook_04_Modeling_Forecasting_Insights.ipynb
+├── Report/               # Final Executive Research Brief (PDF/HTML)
 
-├── SHDE_Forecast_2026_2030.pdf
+├── README.md             # Project Documentation
 
-├── shde_master_engine_v1.xls
-
-└── README.md
+└── shde_master_engine.xls # Final Processed Master Data
 
 
----
+## 🎯 Policy Recommendations
+
+Anticipatory Action: Use the 12-month lag to trigger social safety nets before biological manifestation.
+
+CPI-Linked Support: Calibrate cash transfer programs (e.g., BISP/Ehsaas) to real-time food inflation.
+
+Surveillance: Integrate macroeconomic dashboards with public health monitoring.
+
+
+
+
 
 ## 🤝 Connect & Collaborate
 
 I am a Data Scientist focused on social-impact analytics and public health modeling.  
 
 **Shanzay Khan**
+
+Disclaimer: This project is for research and policy-advocacy purposes and does not constitute clinical medical advice.
