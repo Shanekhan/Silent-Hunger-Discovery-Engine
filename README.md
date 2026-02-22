@@ -53,7 +53,7 @@ The project follows the Google-standard **PACE** (Plan, Analyze, Construct, Exec
 
 ## 📂 Repository Structure
 
-├── Data/                 # Harmonized Longitudinal Datasets
+├── Data/                 # shde_master_engine.xls
 
 ├── Notebooks/            # End-to-End PACE Pipeline (01-04)
 
@@ -61,9 +61,9 @@ The project follows the Google-standard **PACE** (Plan, Analyze, Construct, Exec
 
 ├── Report/               # Final Executive Research Brief (PDF/HTML)
 
-├── README.md             # Project Documentation
+└──  README.md             # Project Documentation
 
-└── shde_master_engine.xls # Final Processed Master Data
+
 
 
 ## 🎯 Policy Recommendations
